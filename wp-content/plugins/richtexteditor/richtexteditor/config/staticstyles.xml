@@ -1,0 +1,35 @@
+<styles>
+	<!--
+	These attributes will execute the config.format_%attrname%
+	
+	value='any value' :
+	subscript,superscript,bold,italic,underline,linethrough,overline,
+	
+	value='specified value' :
+	forecolor,backcolor,fontsize,fontname,cssclass,cssstyle,
+	-->
+	<style name="@clearstyle" />
+	<style name="Comment" italic="1" cssstyle="color:darkgreen;" />
+	<style name="Highlight" cssstyle="background-color:yellow;" />
+	<style name="archive-title" cssclass="archive-title" />
+	<style name="comments-area" cssclass="comments-area" />
+	<style name="comment-content" cssclass="comment-content" />
+	<style name="comments-title" cssclass="comments-title" />
+	<style name="entry-caption" cssclass="entry-caption" />
+	<style name="entry-content" cssclass="entry-content" />
+	<style name="entry-header" cssclass="entry-header" />
+	<style name="format-status" cssclass="format-status" />
+	<style name="gallery" cssclass="gallery" />
+	<style name="gallery-caption" cssclass="gallery-caption" />
+	<style name="gallery-item" cssclass="gallery-item" />
+	<style name="image-attachment" cssclass="image-attachment" />
+	<style name="page-links" cssclass="page-links" />
+	<style name="page-title" cssclass="page-title" />
+	<style name="site" cssclass="site" />
+	<style name="site-content" cssclass="site-content" />
+	<style name="site-header" cssclass="site-header" />
+	<style name="template-front-page" cssclass="template-front-page" />
+	<style name="widget-area" cssclass="widget-area" />
+	<style name="widget-title" cssclass="widget-title" />
+	<style name="wp-caption" cssclass="wp-caption" />
+</styles>

@@ -1,0 +1,1254 @@
+
+
+.global-title {
+	font-family: 'GothamPro-Medium';
+}
+
+.info-our-company .item .box-text p {
+	font-size: 16px;
+  line-height: 1.5;
+}
+
+.page {
+	&:not(.home) {
+		.ui-tabs-nav {
+			padding: 0;
+			display: flex;
+			justify-content: space-between;
+		}
+
+	.works-items li {
+		display: flex;
+		align-items: center;
+		height: auto;
+  	min-height: 30px;
+  	width: 30%;
+  	border: none;
+  	margin: 0;
+
+  	&:hover {
+  		box-shadow: none;
+  		transform: translateX(0px);
+  	}
+
+		&.ui-state-active {
+			box-shadow: none;
+			transform: translateX(0px);
+
+			a {
+				background-color: $clear;
+			  background-image: linear-gradient(to top,#ddb98a 2px,transparent 2px);
+			  background-repeat: no-repeat;
+			  background-size: 100% 100%;
+			  transition: background-size .25s cubic-bezier(1,.095,.48,1.015) 0s,color .25s cubic-bezier(1,.095,.48,1.015) 0s;
+			  background-position: 50% 100%;
+
+			  &:hover,
+			  &:focus {
+			  	background-size: 0 100%;
+
+			  	span {
+			  		color: #ddb98a;
+			  	}
+			  }
+			}
+		}
+
+		a {
+			padding: 10px;
+  		display: flex;
+  		align-items: center;
+  		margin: 0;
+	  	border: none;
+	  	position: relative;
+		  padding: 0;
+		  border: none;
+		  text-decoration: none;
+		  background-color: $clear;
+		  background-image: linear-gradient(to top,#ddb98a 2px,transparent 2px);
+		  background-repeat: no-repeat;
+		  background-size: 0 100%;
+		  transition: background-size .25s cubic-bezier(1,.095,.48,1.015) 0s,color .25s cubic-bezier(1,.095,.48,1.015) 0s;
+		  background-position: 50% 100%;
+
+		  &:focus,
+		  &:hover {
+		    transition-duration: 0;
+		    background-size: 100% 100%;
+		  }
+
+  		span {
+  			margin-bottom: 0;
+  		}
+
+    		.number {
+    			margin-right: 10px;
+    		}
+			}
+
+			.text, strong, .mark-link {
+				display: none;
+			}
+		}
+	}
+}
+
+.works-seo-text .box-text p {
+	line-height: 1.4;
+}
+
+.list-blog {
+	margin-left: 0;
+
+	li {
+		width: 31%;
+		padding: 15px;
+		margin: 68px 0 50px 2%;
+		transform: none;
+		border: 2px solid transparent;
+
+		@media only screen and (min-width: $desktop) {
+			margin-top: 50px;
+		}
+
+		& > a {
+			width: 100%;
+
+			&.mark-link {
+				width: auto;
+			}
+		}
+
+		img {
+			height: auto;
+
+			@media only screen and (min-width: $ipad) {
+				height: auto;
+			}
+		}
+	}
+}
+
+.list-blog li:hover {
+	transform: none;
+	box-shadow: none;
+	border: 2px solid #ddb98a;
+}
+
+.slider-result .line-figure2:before {
+	height: 178px;
+}
+
+
+
+.promo {
+
+	&-container {
+		width: 100%;
+		height: 100vh;
+		max-height: 768px;
+	}
+
+	&-slider {
+		height: 100%;
+
+		.slick-track,
+		.slick-list  {
+			height: 100%;
+		}
+
+
+		.item {
+
+		}
+	}
+}
+
+.contant-home-slide {
+	margin-bottom: 35px;
+}
+
+.section {
+	position: relative;
+	padding: 40px 20px 0;
+	margin: 0 10px 40px;
+	border-top: 2px solid #e3e3e3;
+	color: #64615e;
+	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+
+	@media only screen and (min-width: 468px) {
+		padding: 35px 20px 0;
+	  margin: 0 15px 44px;
+	}
+
+	@media only screen and (min-width: $desktop) {
+		max-width: 1180px;
+		margin: auto auto 44px;
+		padding: 60px 15px 0;
+
+		ul {
+			padding: 0 60px;
+		}
+	}
+
+	h2 {
+		max-width: 300px;
+		margin-bottom: 20px;
+		font-size: 22px;
+		font-family: 'GothamPro-Bold';
+
+		@media only screen and (min-width: 468px) {
+			margin-bottom: 35px;
+			font-size: 28px;
+		}
+
+		@media only screen and (min-width: $desktop) {
+			max-width: 100%;
+		}
+	}
+
+	h3 {
+		padding-right: 15px;
+	  margin-bottom: 20px;
+		font-size: 16px;
+		color: #ddb98a;
+		font-family: 'GothamPro-Medium';
+
+		@media only screen and (min-width: 468px) {
+			margin-bottom: 50px;
+			font-size: 18px;
+		}
+
+		&.ttl-small {
+			max-width: 205px;
+		}
+	}
+
+	& > h3 {
+		font-size: 20px;
+	}
+
+
+	&.section-main__info {
+
+		@media only screen and (min-width: $desktop) {
+			margin-bottom: 60px;
+		}
+
+		 h2 {
+			@media only screen and (min-width: $desktop) {
+				text-transform: uppercase;
+			}
+		}
+
+		.box-text p {
+			@media only screen and (min-width: $desktop) {
+				margin-bottom: 25px;
+			}
+		}
+	}
+
+
+	.box-text p {
+		margin: 0 0 40px 0;
+	}
+
+	&__count {
+		position: absolute;
+		right: 50px;
+		top: 40px;
+		font-family: "GothamPro-Medium";
+		line-height: 23px;
+		font-size: 17px;
+
+		@media only screen and (min-width: 468px) {
+			top: 65px;
+			font-size: 19px;
+		}
+	}
+
+	.slick-arrow {
+		position: absolute;
+		top: -54px;
+		height: 27px;
+		width: 13px;
+		display: inline-block;
+	  vertical-align: middle;
+	  border: none;
+	  text-align: center;
+	  text-decoration: none;
+	  white-space: nowrap;
+	  user-select: none;
+	  background-color: transparent;
+	  background-image: none;
+	  background-repeat: repeat-x;
+	  line-height: 24px;
+	  font-size: 20px;
+	  transition: all .25s linear 0s;
+	  -webkit-appearance: none;
+	  text-indent: -9999px;
+	  background-repeat: no-repeat;
+  	background-size: 100% 100%;
+		background-position: 0 0;
+
+
+	  @media only screen and (min-width: 468px) {
+	  	top: -59px;
+	  }
+
+		&.slick-prev {
+			right: 114px;
+			background-image: url(../images/arrow-left.svg);
+			background-size: 100% 100%;
+		  background-position: 0 0;
+		}
+
+		&.slick-next {
+			right: -5px;
+			background-image: url(../images/arrow-right.svg);
+			background-size: 100% 100%;
+		  background-position: 0 0;
+		}
+	}
+
+	.mark-link {
+		font-size: 16px;
+
+		&::after {
+			top: 9px;
+		}
+	}
+
+	.figure {
+		text-align: center;
+		margin: auto 10px 10px 0;
+
+		@media only screen and (min-width: 468px) {
+			display: inline-block;
+			vertical-align: middle;
+			float: left;
+			margin-right: 15px;
+
+			@media only screen and (min-width: $desktop) {
+				margin-right: 12px;
+			}
+		}
+
+		a {
+			display: inline-block;
+			vertical-align: middle;
+			height: 58px;
+	    width: 58px;
+			border-radius: 50%;
+			border: 3px solid $raffia;
+			line-height: 53px;
+			text-align: center;
+			transition: all 0.4s ease-in-out;
+		}
+
+		img {
+			display: inline-block;
+			vertical-align: middle;
+			max-width: 23px;
+		}
+
+		.img-h {
+			display: none;
+		}
+	}
+
+	.service__ttl {
+		max-width: 100%;
+
+		@media only screen and (min-width: $desktop) {
+			margin-bottom: 24px;
+		}
+
+		.title {
+			display: block;
+			overflow: hidden;
+			text-align: left;
+			font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+		}
+
+		.title a {
+			display: inline-block;
+			vertical-align: middle;
+			color: #64696d;
+			font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+
+			@media only screen and (max-width: 768px) {
+				font-size: 18px;
+			}
+
+			@media only screen and (min-width: $desktop) {
+				font-weight: 300;
+			}
+		}
+	}
+
+	&-service {
+		border-bottom: 2px solid #e3e3e3;
+		padding-bottom: 18px;
+		padding: 40px 20px 0;
+
+		@media only screen and (min-width: 468px) {
+			padding: 40px 20px 0;
+		}
+
+		@media only screen and (min-width: $desktop) {
+			padding: 60px 15px 0;
+		}
+
+		ul {
+			@media only screen and (min-width:  $desktop) {
+				padding: 0 15px;
+			}
+
+			@media only screen and (min-width: $desktop) {
+				padding: 0;
+				margin: 0 -15px;
+			}
+		}
+
+		.section__count {
+			top: 48px;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		ul li .text {
+			padding-left: 0;
+			margin-bottom: 35px;
+			height: auto;
+
+			@media only screen and (min-width: 468px) {
+				padding-left: 68px;
+			}
+		}
+
+		ul li .mark-link {
+			display: inline-block;
+			margin-left: 0;
+
+			@media only screen and (min-width: 468px) {
+				margin-left: 68px;
+			}
+
+			@media only screen and (min-width: $desktop) {
+				font-size: 14px;
+			}
+		}
+
+		.figure {
+			display: inline-block;
+			vertical-align: middle;
+			float: left;
+			margin-left: 10px;
+		}
+	}
+
+	&-info {
+		padding: 25px 0 10px 0;
+		margin: 0 0 40px;
+
+		@media only screen and (min-width: $desktop) {
+			max-height: 540px;
+			overflow: hidden;
+			margin-bottom: 44px;
+
+			.bg-img {
+				height: auto;
+				width: 144%;
+			}
+		}
+
+		@media only screen and (min-width: 1400px) {
+			.bg-img {
+				width: 130%;
+			}
+		}
+
+		@media only screen and (min-width: 1580px) {
+			.bg-img {
+				width: 100%;
+			}
+		}
+
+		.slick-slider {
+			& + .items-info-number {
+				display: block;
+			}
+		}
+
+		.items-info-number {
+			display: none;
+		}
+
+		.item {
+			width: 100%;
+		}
+
+		.figure {
+			@media only screen and (min-width: 468px) {
+				float: none;
+				display: block;
+			}
+		}
+
+		@media only screen and (min-width: $ipad)  and (max-width: $desktop) {
+			margin: 0;
+
+			.item {
+				width: 46%;
+		    max-width: 50%;
+		    display: inline-block;
+		    vertical-align: top;
+
+		    &:nth-child(3) {
+		    	margin-left: 0;
+		    }
+
+				.box-text {
+					margin-bottom: 0;
+				}
+			}
+
+			.bg-img {
+				left: -50%;
+    		height: 100%;
+    		width: auto;
+			}
+
+			.items-info-number {
+				display: none;
+			}
+		}
+
+		@media only screen and (min-width: $desktop) {
+			max-width: 100%;
+			padding: 140px 0;
+			border-top: 0;
+
+			.items-info-slider {
+				max-width: 1128px;
+				margin: auto;
+
+				.item {
+					margin-left: 7%;
+					width: 19.5%;
+
+					&:first-child {
+						margin-left: 0;
+					}
+				}
+			}
+
+			.figure {
+				float: none;
+			}
+
+			.items-info-number {
+				display: none;
+			}
+		}
+
+		.item .box-text {
+			max-width: 80.46%;
+			margin: auto auto 25px;
+
+			@media only screen and (min-width: $desktop) {
+				max-width: 100%;
+				margin-bottom: 0;
+			}
+
+
+			p {
+				margin: 0;
+				font-size: 16px;
+				line-height: 1.5;
+				font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+
+				@media only screen and (min-width: $desktop) {
+					font-size: 12px;
+				}
+			}
+		}
+
+		.items-info-number {
+			bottom: 16px;
+		}
+
+		.slick-arrow {
+			top: 50px;
+		}
+
+		.slick-arrow.slick-next {
+			right: 83px;
+			top: 50px;
+		}
+
+		.slick-arrow.slick-prev {
+			left: 83px;
+			top: 50px;
+		}
+	}
+
+	&-tabs {
+		margin-bottom: 0;
+
+		@media only screen and (min-width: $desktop) {
+			margin-bottom: 44px;
+
+			.global-box-text {
+				padding-left: 25px;
+			}
+
+			.section__count {
+				display: none;
+			}
+
+			h2 {
+				font-size: 40px;
+				text-transform: uppercase;
+				margin-bottom: 30px;
+
+				& + p {
+					font-size: 14px;
+				}
+			}
+		}
+
+		.section__count {
+			display: none;
+		}
+
+		.slick-slider {
+			.section__count {
+				display: block;
+			}
+		}
+	}
+
+	&-main__info {
+		.slick-arrow {
+			top: -56px;
+
+			@media only screen and (min-width: 468px) {
+				top: -86px;
+			}
+
+			@media only screen and (min-width: $desktop) {
+				top: -93px;
+
+				&.slick-prev {
+					right: 118px;
+				}
+
+				&.slick-next {
+					right: 8px;
+				}
+			}
+		}
+
+		.section__count {
+			top: 59px;
+
+			@media only screen and (min-width: $desktop) {
+				top: 78px;
+			}
+		}
+	}
+
+	.text p,
+	.global-box-text p {
+		margin: 0;
+		font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+		font-size: 16px;
+		line-height: 1.5;
+
+		@media only screen and (min-width: 468px) {
+			font-size: 16px;
+		}
+	}
+
+	.global-box-text {
+		margin-bottom: 35px;
+	}
+
+	.our-company-carousel .item {
+		@media only screen and (min-width: $desktop) {
+			padding-left: 70px;
+		}
+	}
+}
+
+.content-result {
+	@media only screen and (min-width: $desktop) {
+		margin-bottom: 44px;
+
+		.text-box {
+			line-height: 1.5;
+			p {
+				margin: 0;
+			}
+		}
+	}
+}
+
+.service-home__item {
+	&.active,
+	&:hover,
+	&:focus  {
+		cursor: pointer;
+
+		.figure {
+			a {
+				box-shadow: inset 0 0 0 29px rgba($raffia, 0.7);
+				border-color: transparent;
+			}
+
+			.img-h {
+				display: inline-block;
+			}
+
+			.img {
+				display: none;
+			}
+		}
+	}
+}
+
+ul.work__list {
+	@media only screen and (min-width: $desktop) {
+		padding: 0;
+		max-width: 1133px;
+		margin: auto;
+	}
+}
+
+
+.work {
+
+	&__list {
+
+		.slick-arrow {
+			top: 32px;
+			background-size: 100% 100%;
+			background-position: 0 0;
+
+			@media only screen and (min-width: 468px) {
+				top: 48px;
+			}
+
+			&.slick-next {
+				right: 40px;
+			}
+
+			&.slick-prev {
+				right: 165px;
+			}
+		}
+	}
+
+
+	&__item {
+		position: relative;
+		margin-bottom: 40px;
+		padding: 25px 20px;
+		border: 2px solid #ebebeb;
+
+		@media only screen and (min-width: 468px) {
+			padding: 40px;
+		}
+
+		@media only screen and (min-width: $desktop) {
+			margin: 0;
+			padding: 35px 55px 20px;
+	    transition: all .4s linear;
+	    position: relative;
+	    display: inline-block;
+	    vertical-align: top;
+	    border: 2px solid #ebebeb;
+	    width: 378px;
+	    background: #fff;
+
+	    &:hover,
+	    &:focus {
+	    	border: 2px solid #ddb98a;
+	    }
+
+	    &:nth-child(1) {
+	    	z-index: 3;
+	    }
+
+	    &:nth-child(2) {
+	    	width: 426px;
+		    margin: 10px -32px 0 -32px;
+		    z-index: 2;
+	    }
+
+	    &:nth-child(3) {
+		    z-index: 1;
+	    }
+
+	    @media only screen and (min-width: $desktop) {
+				.text {
+					display: none;
+					padding-bottom: 25px;
+					margin-bottom: 0;
+
+					p {
+						font-size: 13px;
+			    	line-height: 18px;
+					}
+				}
+
+	    }
+		}
+
+		.number {
+			font-size: 21px;
+	    color: #ddb98a;
+	    line-height: 32px;
+	    margin: 0 0 25px;
+	    display: block;
+	    font-family: 'GothamPro-Medium';
+		}
+
+		h2 {
+			max-width: 100%;
+			font-size: 24px;
+			color: #64696d;
+	    margin: 0 0 15px;
+	    display: block;
+	    font-family: 'GothamPro-Bold';
+
+	    @media only screen and (min-width: $desktop) {
+	    	font-size: 23px;
+	    	margin-bottom: 15px;
+	    }
+		}
+
+		h3 {
+			color: #64696d;
+
+			@media only screen and (min-width: $desktop) {
+				font-size: 14px;
+		    line-height: 18px;
+		    display: block;
+		    margin: 0 0 15px;
+		    font-weight: bold;
+			}
+		}
+
+		.text {
+			margin-bottom: 40px;
+
+			@media only screen and (min-width: $desktop) {
+				margin-bottom: 0;
+				font-weight: 300;
+			}
+		}
+	}
+}
+
+
+ul li.service-home__item {
+	padding: 20px;
+	border: 2px solid transparent;
+	transition: all 0.4s linear 0s;
+	margin-bottom: 40px;
+
+	.figure {
+		@media only screen and (max-width: $desktop) {
+			margin-left: 0;
+		}
+	}
+
+	@media only screen and (max-width: $ipad) {
+		padding: 0px 0 20px;
+
+		.figure {
+			margin-left: 0;
+		}
+
+		.service__ttl {
+			margin-bottom: 20px;
+		}
+
+		.mark-link {
+			margin-left: 68px;
+		}
+	}
+
+	@media only screen and (max-width: $desktop) and (min-width: 468px) {
+		padding: 0px;
+	}
+
+	&:last-child {
+		margin-bottom: 20px;
+
+		@media only screen and (min-width: $desktop) {
+			margin-bottom: 40px;
+		}
+	}
+
+	@media only screen and (min-width: $desktop) {
+	 	padding: 20px 10px 20px 0;
+	 	margin-left: 3%;
+
+	 	&:nth-child(1),
+	 	&:nth-child(4n+4) {
+			margin-left: 0;
+	 	}
+	}
+
+	.item__inner {
+		display: flex;
+		margin-bottom: 10px;
+		padding-top: 10px;
+
+		.ficure {
+			position: relative;
+			top: -10px;
+			left: 0;
+			min-width: 58px;
+			margin-right: 10px;
+
+		}
+
+		.title {
+			margin-bottom: 0;
+
+			@media only screen and (min-width: $desktop) {
+				font-size: 13px;
+			 	height: 66px;
+			  font-family: 'Ubuntu', sans-serif;
+			}
+		}
+	}
+
+	.text {
+		padding-left: 0;
+		margin-bottom: 20px;
+		// height: 54px;
+
+		@media only screen and (min-width: 468px) {
+			padding-left: 68px;
+		}
+
+		@media only screen and (min-width: $ipad) {
+			padding-left: 77px;
+		}
+
+		 @media only screen and (min-width: $desktop) {
+		 	height: 80px;
+		 	margin-bottom: 24px;
+		 	padding-left: 84px;
+
+		 	p {
+				font-size: 13px;
+		 	}
+		 }
+	}
+
+	.mark-link {
+		margin-left: 0;
+
+		@media only screen and (min-width: 468px) {
+			margin-left: 70px;
+		}
+
+		@media only screen and (min-width: 780px) {
+			margin-left: 76px;
+		}
+	}
+
+	&:hover {
+		border-color: $raffia;
+
+
+		@media only screen and (max-width: $desktop) {
+			border-color: transparent;
+		}
+	}
+}
+
+.service-home__item {
+	width: 100%;
+
+	@media only screen and (min-width: 780px) {
+		display: inline-block;
+		vertical-align: top;
+		width: 45%;
+		padding: 20px 0;
+		margin-left: 4%;
+
+		&:nth-child(1),
+		&:nth-child(3),
+		&:nth-child(5) {
+			margin-left: 0;
+		}
+
+		.title {
+			font-size: 19px;
+		}
+
+		.text {
+			font-size: 13px;
+		}
+	}
+
+	@media only screen and (min-width: 1100px) {
+		width: 32%;
+		padding-right: 0;
+
+		&:nth-child(2),
+		&:nth-child(3),
+		&:nth-child(5),
+		&:nth-child(6) {
+			margin-left: 19px;
+		}
+
+		.text {
+			max-height: 100px;
+			overflow: hidden;
+		}
+
+		.title {
+			font-size: 18px;
+		}
+	}
+}
+
+.home-works-tabs .home-work-slider p {
+	@media only screen and (min-width: $ipad) {
+		line-height: 1.5;
+	}
+}
+
+.slider-result .line-figure2:before {
+	@media only screen and (min-width: $desktop) {
+		height: 195px;
+	}
+}
+
+.item-title-works .number {
+	font-size: 30px;
+}
+
+.home-work-content {
+	border-bottom: 0;
+	@media only screen and (max-width: $ipad) {
+
+	}
+
+	.home-work-slider {
+		
+
+		@media only screen and (max-width: $ipad) {
+			width: 100%;
+		padding-left: 0;
+		padding-bottom: 20px;
+		padding-top: 0;
+		}
+	}
+
+	.home-works-tabs > ul {
+
+		@media only screen and (max-width: 468px) {
+			margin-left: 0;
+	    width: auto;
+	    margin-right: 30px;
+	    margin-bottom: 30px;
+	    padding-bottom: 10px;
+		}
+
+		@media only screen and (max-width: $ipad) and (min-width: 468px) {
+			padding: 30px 60px 0 10px;
+			margin-bottom: 40px;
+			margin-right: 40px;
+			width: auto;
+		}
+	}
+
+	.item {
+		p {
+			font-size: 16px;
+			line-height: 1.5;
+
+			@media only screen and (min-width: 468px) {
+				font-size: 16px;
+			}
+		}
+
+		.client {
+			font-size: 30px;
+			line-height: 1;
+
+			@media only screen and (min-width: $desktop) {
+				font-size: 52px;
+			}
+		}
+	}
+
+	.move-right {
+		@media only screen and (max-width: $ipad) {
+			top: -102px;
+    	right: -19px;
+		}
+	}
+
+	&.section .slick-arrow {
+		@media only screen and (max-width: $ipad) {
+			right: auto;
+	    left: 170px;
+	    top: -70px;
+
+	    &.slick-next {
+	    	left: 286px;
+	    }
+	  }
+
+		@media only screen and (min-width: $ipad) {
+	    top: 29px;
+
+	    &.slick-next {
+	    	right: -3px;
+	    }
+	  }
+	}
+
+	.carousel-output {
+		@media only screen and (max-width: $ipad) {
+			top: -70px;
+			right: auto;
+			left: 197px;
+		}
+
+		@media only screen and (min-width: $ipad) {
+			right: 24px;
+		}
+	}
+}
+
+.text-info-blog {
+	font-size: 16px;
+	line-height: 1.5;
+
+	@media only screen and (min-width: 468px) {
+		font-size: 18px;
+	}
+
+	@media only screen and (min-width: $desktop) {
+		font-size: 16px;
+	}
+}
+
+.title-blog {
+	@media only screen and (min-width: $desktop) {
+		font-size: 18px;
+		font-weight: 500;
+	}
+}
+
+.list-blog {
+	width: 100%;
+
+	@media only screen and (min-width: $ipad) {
+
+	}
+
+	li {
+		width: 100%;
+
+		@media only screen and (min-width: $ipad) {
+			width: 45%;
+
+			&:nth-child(odd) {
+				margin-left: 0;
+			}
+		}
+
+		@media only screen and (min-width: $desktop) {
+			margin-bottom: 0;
+			width: 31%;
+		}
+	}
+}
+
+.home-blog {
+	@media only screen and (max-width: 768px) {
+		max-width: 100%;
+
+		ul li {
+			margin-top: 20px;
+			margin-bottom: 0;
+			max-width: 400px;
+		}
+	}
+
+	@media only screen and (max-width: $desktop) {
+		ul li {
+			margin-bottom: 0;
+		}
+	}
+
+	@media only screen and (min-width: $desktop) {
+		margin-bottom: 50px;
+	}
+
+	&-title {
+		@media only screen and (min-width: $desktop) {
+			h3 {
+				float: left;
+				margin-bottom: 0;
+			}
+		}
+   
+		h3 {
+			font-size: 20px;
+		}
+	}
+}
+
+.seo-text .scroll-text {
+	line-height: 1.5;
+}
+
+
+.home {
+	&-slide {
+		.box-info .box-text {
+			line-height: 1.5;
+		}
+	}
+}
+
+
+.content-result {
+	@media only screen and (max-width: 768px) {
+		padding: 45px 30px;
+	}
+
+	.slider-result {
+		@media only screen and (max-width: 768px) {
+			width: 100%;
+			max-width: 100%;
+		}
+
+		.text-box {
+			@media only screen and (max-width: 768px) {
+				font-size: 16px;
+				line-height: 1.5;
+			}
+		}
+
+		.title {
+			margin-left: 0;
+		}
+	}
+}

@@ -1,0 +1,61 @@
+<templates>
+	<group text="Pages">
+		<!--<template text="Widget">
+			<![CDATA[
+				<div class="widget-area">
+					<ul class="xoxo">
+						<li class="widget-container">
+							
+							<h3 class="widget-title"></h3>
+							<ul>
+								<li>List 1</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			]]>
+		</template>-->
+		<template text="Widget">
+			<![CDATA[
+				<div class="widget-area">
+				<aside class="widget">
+					<ul>
+						<li class="widget-container">
+							
+							<h3 class="widget-title">Title</h3>
+							<ul>
+								<li>List item 1</li>
+								<li>List item 2</li>
+							</ul>
+						</li>
+					</ul>
+					</aside>
+				</div>
+			]]>
+		</template>
+		<template text="Post">
+			<![CDATA[
+				<div class="post">
+					<h2 class="entry-title"><a>Hello World</a></h2>
+					<div class="entry-meta">
+						<span>Posted on</span>
+					</div>
+					<div class="entry-content">
+						<p>Content...</p>
+					</div>
+					<div class="entry-utility">
+						<span>Posted in</span>
+					</div>
+				</div>
+			]]>
+		</template>
+		<template text="About">
+			<![CDATA[
+				<div>
+					<h1>About...</h1>
+					<p>This is an about template.</p>
+				</div>
+			]]>
+		</template>
+	</group>
+</templates>

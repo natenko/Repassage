@@ -1,0 +1,287 @@
+.service-main {
+	max-width: 1600px;
+	margin: auto;
+
+	.services-box {
+		margin: 0;
+		max-width: 100%;
+	}
+}
+
+.banner {
+	position: relative;
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	font-size: 20px;
+	margin-top: -70px;
+
+	@media only screen and (max-width:639px) {
+		margin-top: 0;
+	}
+
+	&__pic {
+		position: relative;
+		height: 550px;
+		overflow: hidden;
+		background-image: url(https://www.cetax.com.br/wp-content/uploads/2016/08/BI-Business-Intelligence.png);
+		background-image: url(http://www.exocube.com/wp-content/uploads/2014/02/banner-1.jpg);
+		background-size: cover;
+		background-position: 100% 100%;
+
+		@media only screen and (max-width: 768px) {
+			height: 408px;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background-color: rgba(0, 0, 0, 0.7);
+		}
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__info {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 50%;
+		transform: translate(0, -50%);
+		padding: 0 20px;
+		z-index: 20;
+		color: $white;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	h1 {
+		margin-bottom: 10px;
+		font-size: 2em;
+		font-weight: bold;
+
+		@media only screen and (max-width: 768px) {
+			font-size: 22px;
+		}
+
+		@media only screen and (max-width: 460px) {
+			font-size: 20px;
+		}
+	}
+
+	h2 {
+		font-size: 1.8em;
+
+		@media only screen and (max-width: 768px) {
+			font-size: 20px;
+		}
+
+		@media only screen and (max-width: 460px) {
+			font-size: 18px;
+		}
+	}
+
+	p {
+		font-size: 1em;
+
+		@media only screen and (max-width: 768px) {
+			font-size: 16px;
+		}
+
+		@media only screen and (max-width: 460px) {
+			font-size: 16px;
+			text-transform: none;
+		}
+	}
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	padding: 40px 20px;
+
+	@media only screen and (max-width:768px) {
+		display: block;
+	}
+
+	&__item {
+		position: relative;
+		overflow: hidden;
+		flex: 1 1 20%;
+		max-width: 23%;
+		height: 220px;
+		background-color: #fff;
+		padding: 10px 10px;
+		margin-left: 3%;
+		cursor: pointer;
+		margin-bottom: 10px;
+
+		@media only screen and (max-width:1200px) {
+			height: 180px;
+		}
+
+		@media only screen and (max-width:1100px) {
+			height: 220px;
+		}
+
+		&:nth-child(5) {
+			margin-left: 0%;
+		}
+
+		@media only screen and (max-width:3000px) {
+			flex: 1 1 30%;
+			max-width: 30%;
+
+
+			&:nth-child(4),
+			&:nth-child(7) {
+				margin-left: 0;
+			}
+
+			&:nth-child(5) {
+				margin-left: 3%;
+			}
+		}
+
+		@media only screen and (max-width:1200px) {
+			flex: 1 1 45%;
+			max-width: 45%;
+			margin-left: 5%;
+
+			&:nth-child(odd) {
+				margin-left: 0;
+			}
+
+			&:nth-child(4) {
+				margin-left: 5%;
+			}
+		}
+
+		&:first-child {
+			margin-left: 0;
+		}
+		
+		// &:nth-child(5) {
+		// 	margin-left: 0;
+		// }
+		
+
+		&:hover {
+			.row__content {
+				left: 0;
+			}
+		}
+
+		@media only screen and (max-width:768px) {
+			flex: 1 1 20%;
+			max-width: 100%;
+		}
+	}
+
+	&__header {
+		display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: flex-start;
+	}
+
+	&__content {
+		z-index: 10;
+		position: absolute;
+		top: -140%;
+		top: 0;
+		bottom: 0;
+    left: -100%;
+    right: 0;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    transition: all 0.2s linear .1s;
+    background-color: rgba(221, 185, 138, 0.9);
+    color: #545454;
+    font-size: 13px;
+
+    p {
+    	margin: auto;
+    }
+
+    a {
+    	display: flex;
+    	color: #545454;
+    	font-size: 13px;
+    }
+	}
+
+	.icon {
+		display: block;
+		margin: 0 auto;
+		width: 80px;
+		height: 80px;
+		line-height: 80px;
+		fill: #545454;
+		text-align: center;
+
+		img {
+			display: inline-block;
+			vertical-align: middle;
+
+			&.img-h {
+				display: none;
+			}
+		}
+	}
+
+	h2 {
+		position: relative;
+		font-weight: bold;
+		color: #64615e;
+		text-transform: uppercase;
+		padding-bottom: 10px;
+		text-align: center;
+		width: 100%;
+		height: 85px;
+		font-size: 17px;
+
+		a {
+			color: #64615e;
+		}
+	}
+
+	h3 {
+		text-align: center;
+		margin-bottom: 30px;
+		padding: 0 20px;
+		color: #64615e;
+		font-style: italic;
+		font-size: 14px;
+		width: 100%;
+
+		&::after {
+			content: '';
+			display: block;
+			position: relative;
+			top: 5px;
+			height: 2px;
+			width: 40px;
+			margin: auto;
+			background-color: #ddb98a;
+		}
+	}
+}
+
+.info-services {
+	display: none;
+}
+
+.catalog-lt {
+	.services-home__carousel-output {
+		display: none;
+	}
+}

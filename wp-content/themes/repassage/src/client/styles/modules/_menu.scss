@@ -1,0 +1,173 @@
+.popup-menu  {
+	bottom: 0;
+  height: 90%;
+  overflow: auto;
+
+  @media only screen and (min-width: $ipad) {
+  	bottom: auto;
+  	height: auto;
+  }
+}
+
+.page--has-menu {
+	overflow: hidden;
+
+	.popup-menu {
+		opacity: 1;
+    visibility: visible;
+	}
+}
+
+.contant-home-slide {
+	@media only screen and (min-width: $desktop) {
+		height: 100vh;
+		overflow: hidden;
+	}
+}
+
+
+.main-menu {
+  padding: 0 20px 0;
+
+  @media only screen and (min-width: $ipad) {
+		display: flex;
+	  justify-content: space-around;
+	  justify-content: space-between;
+	  padding: 0 35px 35px;
+  }
+
+	.menu-image-title {
+		color: #3d3d3d;
+		font-size: 14px;
+    line-height: 18px;
+    font-family: "GothamPro-Medium";
+
+     @media only screen and (min-width: $ipad) {
+     	line-height: 26px;
+     }
+	}
+
+	.menu-image-hover-wrapper {
+		float: none;
+	}
+
+	.menu-image-title-after {
+		display: block;
+		margin-bottom: 40px;
+
+		span {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+	.sub-menu {
+		padding-left: 10px;
+
+		.menu-item {
+			margin-bottom: 15px;
+		}
+
+		.menu-image-title-after {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.menu-glavnoe-menyu-centralnyj-blok-container {
+	padding: 0 20px;
+
+	& > ul > li > a {
+		span {
+			border-bottom: 1px solid #3d3d3d;
+		}
+	}
+
+	.sub-menu  {
+		.menu-image-title-after {
+			display: flex;
+		}
+
+		a {
+
+			img {
+				margin-left: 0 !important;
+
+
+				&.menu-image {
+					opacity: 1;
+					transition: none;
+				}
+
+				&.hovered-image  {
+					display: none;
+					opacity: 1;
+					transition: none;
+				}
+			}
+
+			&:hover,
+			&:focus {
+				img {
+					opacity: 1;
+					transition: none;
+					display: none;
+
+					&.hovered-image {
+						display: inline-block;
+						vertical-align: middle;
+					}
+				}
+			}
+		}
+	}
+}
+
+.menu-glavnoe-menyu-pravyj-blok-container {
+	li {
+		span {
+			display: inline;
+			border-bottom: 1px solid #3d3d3d;
+		}
+	}
+}
+
+.menu-glavnoe-menyu-levyj-blok-container {
+	.menu-image-title {
+		font-family: 'Ubuntu', sans-serif;
+		font-weight: 500;
+	}
+
+	li {
+		margin-bottom: 35px;
+
+		&:nth-child(2),
+		&:nth-child(3) {
+
+			.menu-image-title-after {
+				margin-bottom: 5px;
+			}
+		}
+
+		.menu-image-title {
+			display: inline;
+			border-bottom: 1px solid #3d3d3d;
+		}
+	}
+
+	.sub-menu {
+		padding-left: 35px;
+
+		.menu-image-title {
+			font-weight: 300;
+		}
+
+		.menu-item {
+			margin-bottom: 0;
+
+			a {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

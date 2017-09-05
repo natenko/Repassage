@@ -1,0 +1,853 @@
+.contant-home-slide {
+	height: 100vh;
+	margin-bottom: 40px;
+	overflow: hidden;
+
+	@media only screen and (min-width: $desktop) {
+		margin-bottom: 50px;
+	}
+
+	.box-text {
+		line-height: 1.5;
+	}
+}
+
+
+.section {
+	position: relative;
+	max-width: 93.90625%;
+	margin: 0 auto 40px;
+	padding: 40px 20px 0;
+	border-top: 2px solid #e3e3e3;
+	color: #64615e;
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+
+  @media only screen and (min-width: $ipad) {
+  	max-width: 100%;
+  	margin: 0 15px 40px;
+  }
+
+  @media only screen and (min-width: $desktop) {
+		max-width: 1180px;
+		margin: 0 auto 50px auto;
+		padding-top: 50px;
+  }
+
+  p {
+  	line-height: 1.5;
+  	margin: 0;
+  	font-size: 16px;
+
+  	@media only screen and (min-width: $level) {
+			font-size: 18px;
+		}
+
+		// @media only screen and (min-width: $desktop) {
+		// 	font-size: 19px;
+		// }
+  }
+
+  h2 {
+		margin-bottom: 25px;
+		font-size: 20px;
+		font-family: 'GothamPro-Bold', Helvetica, Arial, sans-serif;
+		font-weight: bold;
+
+		@media only screen and (min-width: $level) {
+			font-size: 22px;
+			margin-bottom: 30px;
+		}
+
+		@media only screen and (min-width: $desktop) {
+			font-size: 24px;
+		}
+
+		&.ttl-lg {
+			@media only screen and (min-width: $desktop) {
+				font-size: 36px;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	h3 {
+		font-size: 18px;
+		font-family: 'GothamPro-Medium', Helvetica, Arial, sans-serif;
+		font-weight: 400;
+		color: $calico;
+		margin-bottom: 25px;
+
+		@media only screen and (min-width: $level) {
+			font-size: 20px;
+		}
+
+		@media only screen and (min-width: $ipad) {
+  		margin-bottom: 30px;
+  	}
+
+		@media only screen and (min-width: $desktop) {
+			font-size: 22px;
+		}
+	}
+
+	&__header {
+  	display: flex;
+  	align-items: center;
+  	justify-content: space-between;
+  	margin-bottom: 25px;
+
+  	h3 {
+  		margin-bottom: 0;
+  	}
+
+  	@media only screen and (min-width: $ipad) {
+  		margin-bottom: 30px;
+  	}
+  }
+
+	.ttl-small {
+		max-width: 200px;
+
+		@media only screen and (min-width: $desktop) {
+			max-width: 250px;
+		}
+	}
+
+	.slick-arrow {
+		position: absolute;
+		top: -49px;
+		height: 27px;
+		width: 13px;
+		display: inline-block;
+	  vertical-align: middle;
+	  border: none;
+	  text-align: center;
+	  text-decoration: none;
+	  white-space: nowrap;
+	  user-select: none;
+	  background-color: transparent;
+	  background-image: none;
+	  background-repeat: repeat-x;
+	  line-height: 24px;
+	  font-size: 20px;
+	  transition: all .25s linear 0s;
+	  -webkit-appearance: none;
+	  text-indent: -9999px;
+	  background-repeat: no-repeat;
+  	background-size: 100% 100%;
+		background-position: 0 0;
+
+		&.slick-prev {
+			right: 85px;
+			background-image: url(../images/arrow-left.svg);
+			background-size: 100% 100%;
+		  background-position: 0 0;
+
+		  @media only screen and (min-width: $ipad) {
+		  	right: 105px;
+		  }
+		}
+
+		&.slick-next {
+			right: -5px;
+			background-image: url(../images/arrow-right.svg);
+			background-size: 100% 100%;
+		  background-position: 0 0;
+		}
+	}
+
+	&__count {
+		position: relative;
+		// top: 42px;
+  //   right: 45px;
+    top: 2px;
+    right: 25px;
+		font-family: 'GothamPro-Medium', Helvetica, Arial, sans-serif;
+		font-size: 16px;
+		line-height: 23px;
+
+		@media only screen and (min-width: $ipad) {
+    	font-size: 18px;
+    	top: 0;
+    }
+	}
+
+	.mark-link {
+		position: relative;
+		color: #64615e;
+		transition: color 0.4s ease-in-out;
+		letter-spacing: 1px;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			color: $calico;
+
+			.icon {
+				stroke: $calico;
+			}
+		}
+
+		@media only screen and (min-width: $level) {
+			font-size: 18px;
+		}
+
+		// @media only screen and (min-width: $desktop) {
+		// 	font-size: 20px;
+		// }
+
+		.icon {
+			width: 28px;
+			margin-top: 0;
+			transition: stroke 0.4s ease-in-out;
+		}
+
+		&::after {
+			display: none;
+			top: 12px;
+		}
+	}
+}
+
+// SECTION MAIN INFO SECTION#1
+
+.section-main__info {
+	h2 {
+		text-transform: uppercase;
+	}
+
+	.slick-arrow {
+		top: -58px;
+
+		@media only screen and (min-width: $ipad) {
+			top: -71px;
+		}
+	}
+
+	.section__count {
+		// top: 61px;
+		// right: 37px;
+
+		top: 4px;
+    right: 16px;
+
+    @media only screen and (min-width: $ipad) {
+    	font-size: 18px;
+    	top: 0;
+    	right: 22px;
+    }
+	}
+
+	.mark-link {
+		display: inline-block;
+		margin-top: 25px;
+	}
+
+	.box-text {
+		@media only screen and (min-width: $ipad) {
+			padding-left: 68px;
+		}
+	}
+}
+
+//SECTION SERVICE, SECTION#2
+
+.section-service {
+	.section__header {
+		@media only screen and (min-width: $desktop) {
+			margin-bottom: 50px;
+		}
+	}
+
+	.figure {
+		float: left;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 10px 0 0;
+
+		@media only screen and (min-width: $desktop) {
+			margin-top: -16px;
+		}
+
+		a {
+			display: inline-block;
+			vertical-align: middle;
+			height: 58px;
+	    width: 58px;
+			border-radius: 50%;
+			border: 3px solid $raffia;
+			line-height: 53px;
+			text-align: center;
+			transition: all 0.4s ease-in-out;
+		}
+
+		img {
+			display: inline-block;
+			vertical-align: middle;
+			max-width: 23px;
+		}
+
+		.img-h {
+			display: none;
+		}
+	}
+
+	.title {
+		display: block;
+		overflow: hidden;
+		color: $nevada;
+
+		a {
+			font-size: 18px;
+			color: $nevada;
+
+			@media only screen and (min-width: $laptop) {
+				font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+			  font-weight: 500;
+			  line-height: 1.5;
+				font-size: 20px;
+			}
+
+			@media only screen and (min-width: $desktop) {
+				display: block;
+				font-size: 18px;
+				font-weight: 400;
+			}
+
+			@media only screen and (min-width: $large) {
+				font-size: 19px;
+				font-weight: 500;
+				line-height: 1.3;
+			}
+		}
+	}
+
+	.text {
+		margin-bottom: 15px;
+		overflow: hidden;
+		
+		@media only screen and (min-width: $ipad) {
+			max-height: 78px;
+		}
+
+		@media only screen and (min-width: $desktop) {
+			flex: 1;
+			max-height: 90px;
+			padding-left: 68px;
+
+			p {
+				font-size: 16px;
+			}
+		}
+	}
+
+	ul {
+		@media only screen and (min-width: $ipad) {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+	}
+
+	.mark-link {
+		@media only screen and (min-width: $desktop) {
+			font-size: 16px;
+			padding-left: 68px;
+		}
+	}
+}
+
+.service {
+
+	&__ttl {
+		display: flex;
+		align-items: center;
+		margin-bottom: 15px;
+		overflow: hidden;
+
+		@media only screen and (min-width: $ipad) {
+			align-items: flex-start;
+			flex: 1;
+		}
+
+		@media only screen and (min-width: $laptop) {
+			align-items: center;
+			flex: 1;
+		}
+
+		@media only screen and (min-width: $desktop) {
+			display: block;
+			overflow: visible;
+		}
+	}
+
+	&-home__item {
+		margin-bottom: 25px;
+
+		@media only screen and (min-width: $ipad) {
+			margin-bottom: 35px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+
+			@media only screen and (min-width: $ipad) {
+				margin-bottom: 35px;
+			}
+		}
+
+		.slick-slider & {
+			margin-bottom: 0;
+		}
+
+		@media only screen and (min-width: $ipad) {
+		  display: inline-block;
+			vertical-align: top;
+			display: flex;
+      flex-direction: column;
+			width: 44%;
+			flex: 1 1 44%;
+			margin-left: 6%;
+
+			&:nth-child(odd) {
+				margin-left: 0;
+			}
+		}
+
+		@media only screen and (min-width: $desktop) {
+			display: block;
+			flex: 1 1 30%;
+			width: 30%;
+			margin-left: 3%;
+
+			&:nth-child(odd) {
+				margin-left: 3%;
+			}
+
+			&:nth-child(1),
+			&:nth-child(4n+4) {
+				margin-left: 0;
+			}
+
+			&:nth-child(4),
+			&:nth-child(5),
+			&:nth-child(6) {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+
+.section-tabs {
+	border-bottom: 2px solid #e3e3e3;
+	padding-bottom: 50px;
+
+	&-head {
+		margin-bottom: 20px;
+
+		@media only screen and (min-width: $ipad) {
+  		margin-bottom: 30px;
+  	}
+
+  	@media only screen and (min-width: $desktop) {
+  		padding-left: 68px;
+  	}
+	}
+
+	.slick-arrow {
+		top: 25px;
+
+		@media only screen and (min-width: $ipad) {
+			top: 35px;
+		}
+
+		&.slick-prev {
+			right: 114px;
+
+			@media only screen and (min-width: $ipad) {
+				right: 146px;
+			}
+		}
+
+		&.slick-next {
+			right: 16px;
+
+			@media only screen and (min-width: $ipad) {
+				right: 21px;
+			}
+		}
+	}
+}
+
+.work {
+	&__list {
+		@media only screen and (min-width: $laptop) {
+			display: flex;
+			align-items: flex-start;
+		}
+
+		@media only screen and (min-width: $desktop) {
+			max-width: 1140px;
+			margin: auto;
+		}
+	}
+
+	&__item {
+		position: relative;
+		margin: 0 auto 25px;
+		padding: 20px 15px;
+		border: 2px solid #e3e3e3;
+		background-color: $white;
+		transition: all .4s linear;
+
+		@media only screen and (min-width: $ipad) {
+			padding: 30px;
+		}
+
+		@media only screen and (min-width: $laptop) {
+			// flex: 1 0 0%;
+			width: 31.47826087%;
+			z-index: 1;
+			margin-bottom: 0;
+
+			&:nth-child(1) {
+				z-index: 3;
+			}
+
+			&:nth-child(2) {
+				width: 37.04347826%;
+				z-index: 2;
+				margin: 10px -32px 0 -32px;
+			}
+
+			.text {
+				display: none;
+			}
+		}
+
+		@media only screen and (min-width: $desktop) {
+			.text {
+				display: block;
+			}
+		}
+
+		&:focus,
+		&:hover {
+			border-color: #ddb98a;
+		}
+
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&.slick-slide {
+			margin-bottom: 0;
+		}
+
+		.section__count {
+			display: none;
+			position: absolute;
+	    top: 22px;
+	    right: 41px;
+		}
+
+		&.slick-slide {
+			.section__count {
+				display: block;
+		  }
+		}
+
+		.number {
+			font-size: 21px;
+			margin-bottom: 20px;
+	    color: #ddb98a;
+	    line-height: 1;
+	    display: block;
+	    font-family: 'GothamPro-Medium';
+	    flex: 100 1 100%;
+
+	    @media only screen and (min-width: $ipad) {
+	    	font-size: 28px;
+	    }
+
+	    @media only screen and (min-width: $desktop) {
+	    	flex: none;
+	    	margin-right: 10px;
+	    	margin-bottom: 0;
+	    }
+		}
+
+		h2 {
+			font-size: 18px;
+			margin-bottom: 0;
+
+			@media only screen and (min-width: $ipad) {
+				font-size: 22px;
+				text-transform: uppercase;
+			}
+		}
+
+		h3 {
+			font-size: 16px;
+			margin-bottom: 15px;
+
+			@media only screen and (min-width: $ipad) {
+				font-size: 20px;
+			}
+
+			@media only screen and (min-width: $laptop) {
+				font-size: 16px;
+				color: #64696d;
+			}
+		}
+
+		.text {
+			margin-bottom: 15px;
+
+			p {
+				font-size: 15px;
+
+				@media only screen and (min-width: $ipad) {
+					font-size: 18px;
+				}
+			}
+		}
+
+		.item-title-works {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 20px;
+
+			@media only screen and (min-width: $desktop) {
+				justify-content: flex-start;
+				flex-wrap: nowrap;
+        align-items: center;
+			}
+		}
+	}
+}
+
+.section-info {
+	max-width: 100%;
+	margin: 0 0 40px;
+	padding: 40px 35px 40px;
+	border-top: 0;
+
+	@media only screen and (min-width: $ipad) {
+		.bg-img {
+			width: 160%;
+		}
+	}
+
+	@media only screen and (min-width: $desktop) {
+		padding: 140px 0;
+		margin-bottom: 50px;
+		overflow: hidden;
+
+		.bg-img {
+			height: auto;
+			width: 100%;
+		}
+	}
+
+	.item {
+	  display: block;
+		width: 100%;
+		margin: 0 0 25px;
+		color: $white;
+	  font-size: 12px;
+	  line-height: 1.4;
+	  font-family: "GothamPro-Medium";
+	  text-align: center;
+
+	  @media only screen and (min-width: $ipad) {
+	  	width: 42%;
+	    display: inline-block;
+	    vertical-align: top;
+	    margin-right: 7%;
+
+	    &:last-child,
+	    &:nth-child(3) {
+				margin-bottom: 0;
+			}
+
+			&:nth-child(even) {
+				margin-right: 0;
+			}
+	  }
+
+	  @media only screen and (min-width: $laptop) {
+	  	width: 24%;
+	  }
+
+	  @media only screen and (min-width: $desktop) {
+		  margin-left: 5%;
+	    width: 22.5%;
+
+	    &:first-child {
+	    	margin-left: 0;
+	    }
+	  }
+
+	  &:last-child {
+	  	margin-bottom: 0;
+	  }
+
+	  .title {
+	  	@media only screen and (min-width: $ipad) {
+	  		font-size: 18px;
+	  	}
+	  }
+	}
+
+	.box-text {
+		max-width: 100%;
+
+		p {
+			font-size: 15px;
+			font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+		}
+	}
+
+	.items-info-slider {
+		width: 100%;
+
+		@media only screen and (min-width: $laptop) {
+			display: flex;
+		}
+
+		@media only screen and (min-width: $desktop) {
+			max-width: 1180px;
+			margin: auto;
+		}
+	}
+
+	.items-info-number {
+		display: none;
+		bottom: 24px;
+	}
+
+	.slick-arrow.slick-prev {
+    right: 50%;
+    top: 41px;
+    width: 30px;
+    height: 41px;
+    transform: translateX(-90px);
+	}
+
+	.slick-arrow.slick-next {
+    right: auto;
+    left: 50%;
+    top: 41px;
+    width: 30px;
+    height: 41px;
+    transform: translateX(86px);
+	}
+}
+
+.slick-slider {
+	& + .items-info-number {
+		display: block;
+	}
+}
+
+
+.home-blog {
+	border-top: none;
+	padding-top: 0;
+}
+
+.blog__list {
+	@media only screen and (min-width: $laptop) {
+		max-width: 1000px;
+		margin: auto;
+	}
+
+	.time {
+		font-family: 'MyriadProBold';
+    font-size: 15px;
+    line-height: 25px;
+    color: #545657;
+    display: block;
+    margin: 0 0 10px;
+    letter-spacing: 2px;
+	}
+
+	.title-blog {
+		display: block;
+		font-size: 17px;
+		font-weight: 500;
+		line-height: 1.3;
+		margin: 15px 0;
+		color: #545657;
+
+		@media only screen and (min-width: $ipad) {
+			font-size: 20px;
+		}
+
+		@media only screen and (min-width: $laptop) {
+			font-size: 17px;
+			margin: 25px 0;
+		}
+	}
+
+	.text-info-blog {
+		font-size: 15px;
+		margin-bottom: 15px;
+
+		@media only screen and (min-width: $ipad) {
+			font-size: 18px;
+		}
+	}
+
+	.mark-title-blog {
+		display: none;
+	}
+
+	li {
+		margin: 0 0 15px;
+		padding: 20px;
+		border: 2px solid #e3e3e3;
+
+		img {
+			display: block;
+			margin: auto;
+			max-width: 100%;
+		}
+
+		@media only screen and (min-width: $ipad) {
+			display: inline-block;
+			vertical-align: top;
+			width: 46%;
+			margin-right: 7%;
+			margin-bottom: 25px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&:nth-child(even) {
+				margin-right: 0;
+			}
+		}
+
+		@media only screen and (min-width: $laptop) {
+			padding: 30px;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+//TODO 
+
+.content-result {
+	display: none;
+}
+
+
+
